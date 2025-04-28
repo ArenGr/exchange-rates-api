@@ -5,6 +5,9 @@ build:
 # Start the Docker containers in detached mode
 up:
 	docker compose up -d
+	docker compose exec touch database/logs.db
+	docker compose exec -T --user root app chown www-data:www-data database
+	docker compose exec app composer install
 
 # Stop and remove the Docker containers
 down:
