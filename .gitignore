@@ -1,4 +1,5 @@
 /vendor
-/database/logs.db
+logs.db
 *.log
 *.bak
+.idea
