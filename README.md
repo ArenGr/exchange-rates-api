@@ -12,7 +12,7 @@ Before running the application, make sure you have the following installed on yo
 1. Clone the repository to your local machine:
 
    ```bash
-    git@github.com:ArenGr/exchange-rates-api.git
+    git clone git@github.com:ArenGr/exchange-rates-api.git
 
 2. Run the command:
 
@@ -30,7 +30,7 @@ The service will be accessible at http://localhost:8080.
 This endpoint returns exchange rates for the given base currency.
 
 - **Parameters**:
-   - `currency`: The base currency (e.g., USD, EUR).
+   - `currency`: The base currency (e.g., usd, eur).
 
 **Response**:
 - If successful, returns a JSON object containing the exchange rates for the base currency.
@@ -38,7 +38,7 @@ This endpoint returns exchange rates for the given base currency.
 
 Example:
 ```bash
-GET http://localhost:8080/base/USD
+GET http://localhost:8080/base/usd
 ```
 
 ### 2. `/`
