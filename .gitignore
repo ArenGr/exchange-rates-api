@@ -1,0 +1,4 @@
+/vendor
+/database/logs.db
+*.log
+*.bak
